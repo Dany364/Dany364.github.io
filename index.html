@@ -2,47 +2,60 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Daniel Petrescu | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <nav>
+    <!-- ================= NAVBAR ================= -->
 
-        <div class="logo">
+    <header>
 
-            Daniel Petrescu
+        <nav class="navbar">
 
-        </div>
+            <div class="logo">
 
-        <ul>
+                Daniel Petrescu
 
-            <li><a href="#home">Home</a></li>
+            </div>
 
-            <li><a href="#about">About</a></li>
+            <ul class="nav-links">
 
-            <li><a href="#skills">Skills</a></li>
+                <li><a href="#home">Home</a></li>
 
-            <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
 
-            <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
 
-            <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
 
-        </ul>
+                <li><a href="#education">Education</a></li>
 
-    </nav>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
 
     <section class="hero" id="home">
 
-        <div class="hero-content">
+        <div class="hero-text">
+
+            <span class="hello">👋 Hello, I'm</span>
 
             <h1>Daniel Petrescu</h1>
 
@@ -50,15 +63,86 @@
 
             <p>
 
-                Embedded Systems • FPGA • Arduino • ESP32 • Python • SQL
+                Passionate about Embedded Systems, FPGA Design, IoT and Software Development.
+
+                I enjoy transforming ideas into real-world hardware and software projects using
+                Arduino, ESP32, FPGA, Python and SQL.
 
             </p>
 
-            <div class="buttons">
+            <div class="hero-buttons">
 
-                <a href="#projects" class="btn">View Projects</a>
+                <a href="#projects" class="btn primary">
 
-                <a href="#contact" class="btn secondary">Contact Me</a>
+                    View Projects
+
+                </a>
+
+                <a href="assets/cv/CV.pdf" class="btn secondary">
+
+                    Download CV
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="assets/images/profile.jpg" alt="Daniel Petrescu">
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <h2>About Me</h2>
+
+            <p>
+
+                I am an Electronics Engineering student at the National University of Science and Technology
+                POLITEHNICA Bucharest.
+
+                I enjoy designing embedded systems, developing software applications and continuously improving
+                my technical skills through personal and university projects.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <h2>Skills</h2>
+
+            <div class="skills">
+
+                <div class="skill-card">Arduino</div>
+
+                <div class="skill-card">ESP32</div>
+
+                <div class="skill-card">FPGA</div>
+
+                <div class="skill-card">SystemVerilog</div>
+
+                <div class="skill-card">Python</div>
+
+                <div class="skill-card">SQL</div>
+
+                <div class="skill-card">Git</div>
+
+                <div class="skill-card">GitHub</div>
 
             </div>
 
@@ -66,17 +150,99 @@
 
     </section>
 
-    <section id="about"></section>
+    <!-- ================= PROJECTS ================= -->
 
-    <section id="skills"></section>
+    <section id="projects" class="section">
 
-    <section id="projects"></section>
+        <div class="container">
 
-    <section id="education"></section>
+            <h2>Featured Projects</h2>
 
-    <section id="contact"></section>
+            <div class="projects">
 
-<script src="script.js"></script>
+                <div class="project-card">
+
+                    <h3>ESP32 Projects</h3>
+
+                    <p>Bluetooth, Wi-Fi, ESP-NOW communication and IoT applications.</p>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3>FPGA Digital Piano</h3>
+
+                    <p>Digital piano implemented in SystemVerilog using Vivado.</p>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3>RFID Authentication</h3>
+
+                    <p>ESP32 + RFID + Python authentication system.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section">
+
+        <div class="container">
+
+            <h2>Education</h2>
+
+            <p>
+
+                National University of Science and Technology POLITEHNICA Bucharest
+
+            </p>
+
+            <p>
+
+                Faculty of Electronics, Telecommunications and Information Technology
+
+            </p>
+
+            <p>
+
+                2023 - Present
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2>Contact</h2>
+
+            <p>Email: your.email@example.com</p>
+
+            <p>GitHub: github.com/Dany364</p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2025 Daniel Petrescu • Built with HTML, CSS & JavaScript
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
