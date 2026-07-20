@@ -160,7 +160,7 @@ header{
 
     align-items:center;
 
-    gap:20px;
+    gap:80px;
 
 }
 
@@ -270,7 +270,7 @@ header{
 
 .hero-right{
 
-    flex:1;
+    flex:0.8;
 
     display:flex;
 
