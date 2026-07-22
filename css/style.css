@@ -1066,3 +1066,159 @@ footer p{
     color:white;
 
 }
+
+/* ===========================
+   QUOTE
+=========================== */
+
+.quote{
+
+    padding:80px 0;
+    text-align:center;
+
+}
+
+.quote blockquote{
+
+    font-size:30px;
+    font-style:italic;
+    color:#F8FAFC;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+
+}
+
+.quote span{
+
+    display:block;
+    margin-top:25px;
+    color:#60A5FA;
+    font-size:22px;
+    font-weight:600;
+
+}
+
+/* ===========================
+   EDUCATION TIMELINE
+=========================== */
+
+.timeline{
+
+    margin-top:60px;
+
+}
+
+.timeline-item{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:50px;
+
+    margin-bottom:80px;
+
+    padding-bottom:40px;
+
+    border-bottom:1px solid #1F2937;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+}
+
+.timeline-content h3{
+
+    color:#60A5FA;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.timeline-content p{
+
+    line-height:1.9;
+
+    color:#CBD5E1;
+
+    font-size:17px;
+
+}
+
+.timeline-item img{
+
+    width:340px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:2px solid #2563EB;
+
+    transition:.35s;
+
+}
+
+.timeline-item img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.30);
+
+}
+
+@media(max-width:900px){
+
+.timeline-item{
+
+    flex-direction:column;
+
+}
+
+.timeline-item img{
+
+    width:100%;
+
+}
+
+}
+
+/* ===========================
+   COMING SOON
+=========================== */
+
+.coming-soon{
+
+    border:2px dashed #FACC15;
+
+    background:#1A2233;
+
+}
+
+.coming-soon h3{
+
+    color:#FACC15;
+
+}
+
+.coming-soon p{
+
+    text-align:center;
+
+}
+
+.coming-soon:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(250,204,21,.25);
+
+}
