@@ -1421,3 +1421,28 @@ footer p{
     background: #1D4ED8;
     transform: translateY(-3px);
 }
+
+/* ===========================
+   TIMELINE LAYOUT FIX
+=========================== */
+
+.timeline {
+    display: block;
+    width: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #1F2937;
+}
+
+.timeline-content {
+    flex: 1;
+    min-width: 0;
+}
