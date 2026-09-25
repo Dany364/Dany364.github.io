@@ -1228,62 +1228,117 @@ footer p{
 =========================== */
 
 .recommendation-category {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
+
+.recommendation-category:last-child {
+    margin-bottom: 0;
+}
+
+/* Category Titles */
 
 .recommendation-category h3 {
     color: #60A5FA;
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 34px;
+    font-weight: 700;
     text-align: center;
+    margin-bottom: 18px;
+    position: relative;
+    letter-spacing: 0.5px;
 }
 
-.category-description {
-    color: #CBD5E1;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 35px;
-    line-height: 1.8;
+/* Decorative line under category title */
+
+.recommendation-category h3::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #2563EB;
+    border-radius: 10px;
+    margin: 15px auto 0;
 }
+
+/* Category Description */
+
+.category-description {
+    color: #94A3B8;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Recommendation Cards */
 
 .recommendation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .recommendation-card {
     background: #111827;
     border: 1px solid #1F2937;
     border-radius: 20px;
-    padding: 35px;
-    transition: .35s;
+    padding: 40px 35px;
     text-align: center;
+    transition: .35s;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Blue accent at the top of the card */
+
+.recommendation-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: #2563EB;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Card Hover */
 
 .recommendation-card:hover {
     transform: translateY(-10px);
     border-color: #3B82F6;
-    box-shadow: 0 20px 45px rgba(37,99,235,.35);
+    box-shadow: 0 20px 45px rgba(37,99,235,.25);
 }
+
+/* Professor Name */
 
 .recommendation-card h4 {
-    color: #60A5FA;
-    font-size: 23px;
-    margin-bottom: 15px;
+    color: #F8FAFC;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
 }
 
+/* Professor Position */
+
 .recommendation-card p {
-    color: #CBD5E1;
-    line-height: 1.8;
-    margin-bottom: 25px;
+    color: #94A3B8;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
+
+/* View Recommendation Button */
 
 .recommendation-card a {
     display: inline-block;
     background: #2563EB;
     color: white;
-    padding: 12px 22px;
+    padding: 13px 24px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
@@ -1293,4 +1348,27 @@ footer p{
 .recommendation-card a:hover {
     background: #1D4ED8;
     transform: translateY(-3px);
+}
+
+/* Mobile */
+
+@media(max-width:700px) {
+
+    .recommendation-category {
+        margin-bottom: 90px;
+    }
+
+    .recommendation-category h3 {
+        font-size: 28px;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .recommendation-card {
+        padding: 35px 25px;
+    }
+
 }
