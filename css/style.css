@@ -160,14 +160,12 @@ header{
 
     align-items:center;
 
-    gap:80px;
+    gap:50px;
 
 }
 
 .hero-left{
-
-    flex:1;
-
+    flex:1.2;
 }
 
 .intro{
@@ -181,15 +179,10 @@ header{
 }
 
 .hero h1{
-
-    font-size:82px;
-
+    font-size:64px;
     font-weight:800;
-
-    line-height:1.1;
-
+    line-height:1.15;
     margin-bottom:15px;
-
 }
 
 .hero h2{
