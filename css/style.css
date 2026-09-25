@@ -145,27 +145,18 @@ header{
 =================================== */
 
 .hero{
-
     width:90%;
-
     max-width:1300px;
-
     margin:auto;
-
     min-height:100vh;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     gap:50px;
-
 }
 
 .hero-left{
-    flex:1.2;
+    flex:1.4;
 }
 
 .intro{
@@ -179,10 +170,11 @@ header{
 }
 
 .hero h1{
-    font-size:64px;
+    font-size:52px;
     font-weight:800;
     line-height:1.15;
     margin-bottom:15px;
+    white-space:nowrap;
 }
 
 .hero h2{
@@ -685,10 +677,9 @@ footer{
 }
 
 .hero h1{
-
-    font-size:52px;
-
-}
+        font-size:44px;
+        white-space:normal;
+    }
 
 .hero h2{
 
