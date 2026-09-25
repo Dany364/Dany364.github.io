@@ -3,11 +3,11 @@
 // ==============================
 
 const words = [
-    "Embedded Systems Engineer",
-    "FPGA Developer",
-    "ESP32 Developer",
-    "Arduino Developer",
-    "Python Developer"
+    "Third-Year Electronics Engineering Student",
+    "Microcontroller Projects",
+    "Passionate About Networking",
+    "FPGA Projects",
+    "Telecommunications & Telecommunication Systems"
 ];
 
 let wordIndex = 0;
