@@ -1382,3 +1382,21 @@ footer p{
     grid-template-columns: repeat(2, minmax(240px, 1fr));
     gap: 60px;
 }
+
+.timeline-content a {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2563EB;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.timeline-content a:hover {
+    background: #1D4ED8;
+    transform: translateY(-3px);
+}
